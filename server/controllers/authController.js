@@ -5,7 +5,7 @@ const mailOptions = {
     from: 'cambuf@gmail.com',
     to: '',
     subject: 'Thank you from Registering',
-    text: 'Thanks you for registering an account with Training HQ.  Search for trainers and drills to add to your training regimine from the most experienced trainers and training standard drills to become the best at your craft. Stay frosty.'
+    text: 'Thanks you for registering an account with Drill Log.  Search for drills to add to your training routine from training standard drills to become the best at your craft. Stay frosty.'
 }
 
 

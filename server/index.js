@@ -20,6 +20,8 @@ const drillCtrl = require('./controllers/drillController')
 const myDrillCtrl = require('./controllers/myDrillsController')
 
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
 app.use(express.json())
 
 app.use(session({
