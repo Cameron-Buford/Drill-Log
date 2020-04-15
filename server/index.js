@@ -6,6 +6,14 @@ const {SERVER_PORT, CONNECTION_STRING, SESSION_SECRET, SERVER_EMAIL, SERVER_PASS
 const app = express()
 const nodemailer = require('nodemailer')
 
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: SERVER_EMAIL,
+        pass: SERVER_PASSWORD
+    }
+})
+
 
 const authCtrl = require('./controllers/authController')
 const drillCtrl = require('./controllers/drillController')
@@ -14,9 +22,17 @@ const myDrillCtrl = require('./controllers/myDrillsController')
 
 app.use(express.json())
 
+app.use(session({
+    resave: false,
+    saveUninitialized: true,
+    secret: SESSION_SECRET,
+    cookie: {maxAge: 1000 * 60 * 60}  
+}))
+
 massive(CONNECTION_STRING).then(db => {
     app.set('db', db)
     console.log('database is running')
+    app.set('transporter', transporter)
     app.listen(SERVER_PORT, () => console.log(`Server is running on ${SERVER_PORT}`))
 }).catch(err => console.log(err))
 
