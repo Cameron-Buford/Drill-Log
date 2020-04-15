@@ -1,8 +1,12 @@
 import React from 'react'
+import axios from 'axios'
 
 
 const MyDrills = () => {
-    <div>MyDrills</div>
+    return(
+
+        <div>my drills</div>
+        )
 }
 
 export default MyDrills

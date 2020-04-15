@@ -1,8 +1,12 @@
 import React from 'react'
+import axios from 'axios'
 
 
 const SingleDrill = () => {
-    <div>SingleDrill</div>
+    return(
+
+        <div>single drill</div>
+        )
 }
 
 export default SingleDrill

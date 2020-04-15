@@ -1,8 +1,12 @@
 import React from 'react'
+import axios from 'axios'
 
 
 const Stats = () => {
-    <div>Stats</div>
+    return(
+
+        <div>stats</div>
+        )
 }
 
 export default Stats

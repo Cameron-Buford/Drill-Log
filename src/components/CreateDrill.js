@@ -1,8 +1,12 @@
 import React from 'react'
+import axios from 'axios'
 
 
 const CreateDrill = () => {
-    <div>CreateDrill</div>
+    return(
+
+        <div>CreateDrill</div>
+        )
 }
 
 export default CreateDrill

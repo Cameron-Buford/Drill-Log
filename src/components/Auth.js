@@ -1,8 +1,12 @@
 import React from 'react'
+import axios from 'axios'
 
 
 const Auth = () => {
-    <div>Auth</div>
+    return(
+
+        <div>auth</div>
+        )
 }
 
 export default Auth

@@ -1,10 +1,12 @@
 import React from 'react'
+import axios from 'axios'
 
 
 const Nav = () => {
-    <div>
-        Nav
-    </div>
+    return(
+
+        <div>nav</div>
+        )
 }
 
 export default Nav
