@@ -57,6 +57,7 @@ app.post('/auth/logout', authCtrl.logout)
 app.get('/api/myDrills', myDrillCtrl.getMyDrills)
 app.post('/api/create', myDrillCtrl.createDrill)
 app.post('/api/post', myDrillCtrl.postDrill)
+// app.delete(`/api/drill/:drill_id`, myDrillCtrl.deleteDrill)
 
 
 //myscores
