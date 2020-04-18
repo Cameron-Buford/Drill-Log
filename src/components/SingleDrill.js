@@ -9,7 +9,7 @@ const SingleDrill = (props) => {
     const {drill_id} = useParams()
     const {drill} = useAxios('drill', drill_id)
     
-    console.log(drill)
+    // console.log(req.params)
     return(
 
 
