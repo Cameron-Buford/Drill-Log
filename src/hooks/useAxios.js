@@ -89,9 +89,9 @@ const useAxios = (dataName, axiosId = null) => {
         .then(({ data }) => setAxiosData(data))
         .catch((err) => console.log(err))
     },
-    [getSingleAxios]: (drill_id) => {
+    [getSingleAxios]: (id) => {
       axios
-        .get(`${url}/${drill_id}`)
+        .get(`${url}/${id}`)
         .then(({ data }) => setSingleData(data))
         .catch((err) => console.log(err))
     },
@@ -101,15 +101,15 @@ const useAxios = (dataName, axiosId = null) => {
         .then(({ data }) => setAxiosData(data))
         .catch((err) => console.log(err))
     },
-    [putAxios]: (drill_id, body) => {
+    [putAxios]: (id, body) => {
       axios
-        .put(`${url}/${drill_id}`, body)
+        .put(`${url}/${id}`, body)
         .then(({ data }) => setAxiosData(data))
         .catch((err) => console.log(err))
     },
-    [deleteAxios]: (drill_id) => {
+    [deleteAxios]: (id) => {
       axios
-        .delete(`${url}/${drill_id}`)
+        .delete(`${url}/${id}`)
         .then(({ data }) => setAxiosData(data))
         .catch((err) => console.log(err))
     },

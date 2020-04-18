@@ -44,7 +44,12 @@ massive(CONNECTION_STRING).then(db => {
 //drills
 
 app.get('/api/drills', drillCtrl.getAllDrills)
-app.get('/api/singledrill/:drill_id', drillCtrl.getSingleDrill)
+app.get('/api/drill/:drill_id', drillCtrl.getSingleDrill)
+// app.get("/api/drills", drillCtrl.getdrills)
+// app.get('/api/drill/:drill_id', drillCtrl.getSingleDrill)
+// app.post("/api/drill", drillCtrl.createdrill)
+// app.put("/api/drill/:drill_id", drillCtrl.editdrill)
+// app.delete("/api/drill/:drill_id", drillCtrl.deletedrill)
 
 
 //auth
