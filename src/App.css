@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .navbar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    /* background-image: url("https://lh3.googleusercontent.com/u3SaizKkTRDMryv65JjZZ0bQlQ4DKP93E28V75bkPFZ8KamvtEcSbWt96CnUl9RAK_BBNMrMV6ea3smvYVJqFs35yFtkHiC7tsWxy3JLtg6cZQeUIKuoOgvBJ3yfbky1cq2c7xOxFJvwEyNB--VqQBJJY27Rj8TFDqD6tNmmx5hZUJosiBaxX1PEHOYrgX58luQdOBnPm2Nj1MVNq80j6njHY-rNZvmP2aT1qQwvxY2W6d8FFxnvlsiUEezfMaN-xKyj2j3ag1pT3FrJawias90L4KjenFUt_SkurrpILTIfvl7H9E2ZjY3EDRxNr--vhjxCos48FszkWfNdr9MioKQDC-gSeZeMRxmrTlW_wWVNIEXMRi5pmTToE5Cx8SGAX15tBnK6a91yWbVhxcB0W0_juR8jsub1tRsa58GjUccaqU1FqpUhKu3Xyb5PoxvZHbKYUE1VUE1mxoPEIom-LLq0t151m4rR0uO3evwJ5-fWlZe2d2KilD1nkrD0k75tgiS345TUc8_ejA456Zs2yOJd-RlKOKnssFi4YI4DjihQh0B7W49zb-g0xIBz811ogxvkewn-LNHivZpyAXJSyMZtwAsO7fcVRwneEymuaYIv9KRa1H2p33TomGZ8aZ5q94qEIKEASFJ1ZzHV427wYB4rJC5Ly0XiidxGw_XLYnXMpf5q2VAZu927=w876-h659-no"); */
+    /* object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center; */
+    color: #f2f2f2;
+    /* font-style:  ; */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @media(max-width: 800px){
+    .navbar{
+      width: 800px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+  
+    }
   }
-  to {
-    transform: rotate(360deg);
+
+  .drillcontainer{
+    background-color: grey;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
-}
+
+  .drilllist {
+    background-color: rgb(70, 59, 59);
+    height: 100%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .drillbuttonstyle {
+    background-color: transparent;
+    border: none;
+    
+  }
+
+

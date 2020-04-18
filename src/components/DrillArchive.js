@@ -31,10 +31,12 @@ const DrillArchive = ()=>{
 const {drills} = useAxios('drill')
 const {push} = useHistory()
 return(
-<div> DrillArchive
-    {drills.map(({drill_id, name})=>(
-        <button onClick = {()=> push(`/singledrill/${drill_id}`)}>{name}</button>
-    ))}
+<div className = 'drillcontainer'> 
+    <div className = 'drilllist'>
+        {drills.map(({drill_id, name})=>(
+            <button className = 'drillbuttonstyle' onClick = {()=> push(`/singledrill/${drill_id}`)}>{name}</button>
+        ))}
+    </div>
 </div>
     )
 }
